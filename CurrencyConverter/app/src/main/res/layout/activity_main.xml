@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <!-- Tiêu đề ứng dụng -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- EditText và Spinner cho đồng tiền nguồn -->
+    <EditText
+        android:id="@+id/sourceAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:textSize="32sp"
+        android:gravity="center" />
+
+    <Spinner
+        android:id="@+id/sourceCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+
+    <!-- EditText và Spinner cho đồng tiền đích -->
+    <EditText
+        android:id="@+id/targetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:focusable="false"
+        android:clickable="false"
+        android:editable="false" />
+
+    <Spinner
+        android:id="@+id/targetCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+
+    <!-- Bàn phím số -->
+    <GridLayout
+        android:id="@+id/numberPad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:paddingTop="16dp"
+        android:layout_gravity="center">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <!-- Nút CE -->
+        <Button
+            android:text="CE"
+            android:id="@+id/buttonCE"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút Xóa -->
+        <Button
+            android:text="X"
+            android:id="@+id/buttonX"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 7 -->
+        <Button
+            android:text="7"
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 8 -->
+        <Button
+            android:id="@+id/button8"
+            android:text="8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 9 -->
+        <Button
+            android:id="@+id/button9"
+            android:text="9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 4 -->
+        <Button
+            android:id="@+id/button4"
+            android:text="4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 5 -->
+        <Button
+            android:id="@+id/button5"
+            android:text="5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 6 -->
+        <Button
+            android:id="@+id/button6"
+            android:text="6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 1 -->
+        <Button
+            android:id="@+id/button1"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 2 -->
+        <Button
+            android:id="@+id/button2"
+            android:text="2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút số 3 -->
+        <Button
+            android:id="@+id/button3"
+            android:text="3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+
+        <!-- Nút trống (Spacer) -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <!-- Nút số 0 -->
+        <Button
+            android:id="@+id/button0"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <!-- Nút dấu chấm (.) -->
+        <Button
+            android:id="@+id/buttonDot"
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+    </GridLayout>
+</LinearLayout>
