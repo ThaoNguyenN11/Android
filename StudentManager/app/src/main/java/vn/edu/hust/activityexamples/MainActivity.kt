@@ -1,5 +1,4 @@
-package vn.edu.hust.studentman
-
+package vn.edu.hust.activityexamples
 import android.content.Intent
 import android.os.Bundle
 import android.view.ContextMenu
@@ -127,4 +126,4 @@ class MainActivity : AppCompatActivity() {
       else -> super.onOptionsItemSelected(item)
     }
   }
-}}
+}
