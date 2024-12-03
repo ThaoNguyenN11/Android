@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable baseline_label_important_24
+drawable baseline_menu_24
+drawable baseline_search_24
+drawable baseline_star_24
+drawable baseline_star_border_24
+drawable bottom_border
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id ava
+id item_view
+id label
+id left_icon
+id main
+id preview_text
+id recyclerView
+id relativeLayout
+id sender_name
+id star
+id subject
+id timestamp
+id toolbar
+id toolbar_title
+id view
+layout activity_main
+layout email_item
+layout toolbar
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Gmail
+style Theme.Gmail
+xml backup_rules
+xml data_extraction_rules
